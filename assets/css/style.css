@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: hsl(72, 50%, 91%);
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: #282626;
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+.navbar {
+    background-color: var(--color-base);
+}
+
+.full__height {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+
+
+}
+
+.text1 {
+    margin-top: 100px;
+}
+
+.text1 h2 {
+    font-size: small;
+}
+
+.text2 {
+    border: 1px solid #353131;
+    background-color: #353131;
+    border-radius: 10px;
+}
+
+.navbar-brand img {}
+
+.navbar-brand span {
+    color: #FFF;
+
+}
+
+.navbar-brand span:hover {
+    color: var(--color-brand);
+}
+
+
+/* Navbar */
+.navbar-nav .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.custom__line {
+    width: 2px;
+    height: 20px;
+    background-color: white;
+
+
+}
+
+.tech_link img {
+    width: 4%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.a1 {
+    background-color: #6630FF;
+    border-radius: 20px;
+}
+
+@media (min-width:992px) {
+    .navbar {
+        width: var(--sidbar-width);
+        min-height: 100vh;
+        background: #353131;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+
+
+    #content-wrapper {
+        margin-left: var(--sidbar-width);
+    }
+
+
+}
+
+/* content Wrapper */
+
+
+#home h1 span {
+    color: var(--color-brand);
+}
+
+.home__btn {
+    background-color: var(--color-brand);
+    color: var(--color-base2);
+    font-size: large;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.home__btn:hover {
+    background-color: var(--color-brand2);
+    color: var(--color-base2);
+}
+
+.link__custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link__custom::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link__custom:hover::after {
+    width: 100%;
+}
+
+/* content wrapping end */
+
+/* service  */
+.service_text {
+    color: var(--color-brand);
+}
+
+.card {
+    background-color: var(--color-base);
+    border-radius: 10px;
+}
+
+.card-icon {
+    padding: 15px 10px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+    text-align: center;
+    width: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+}
+
+.card:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+    transition: all 0.4s;
+}
+
+
+
+/* // service  */
+/* work */
+
+.work__card img {
+    width: 80%;
+    border-radius: 10px;
+}
